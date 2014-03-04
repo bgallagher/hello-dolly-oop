@@ -7,3 +7,4 @@
  * Author: Brian Gallagher
  * Author URI: http://briangallagher.ie
  */
+require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
