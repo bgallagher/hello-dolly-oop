@@ -31,6 +31,12 @@ Dolly'll never go away
 Dolly'll never go away
 Dolly'll never go away again";
 
+    public static function registerHooks()
+    {
+        add_action('admin_notices', array(__CLASS__, 'helloDolly'));
+        add_action('admin_head', array(__CLASS__, 'dollyCss'));
+    }
+
     public static function helloDolly()
     {
         $chosen = self::getLyric();
